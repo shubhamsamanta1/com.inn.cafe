@@ -7,5 +7,5 @@ import org.springframework.data.repository.query.Param;
 
 public interface UserDao extends JpaRepository<User, Integer> {
 
-    User findByEmailId(@Param("email") String email);
+    public User findByEmailId(@Param("email") String email);
 }
